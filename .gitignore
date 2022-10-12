@@ -18,3 +18,4 @@ testrun/*
 .vscode/
 *.html
 *.xml
+*.png

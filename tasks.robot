@@ -8,11 +8,6 @@ Suite Teardown      Finaliza Processo
 
 
 *** Tasks ***
-Example task
-    Example Keyword
-    Example Python Keyword
-    Log    ${TODAY}
-
 Login No Site
     [Documentation]    Realiza Login no Portal
 
