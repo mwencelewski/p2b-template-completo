@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"robot.variables": {
+			"ROOT": "/Users/maurowencelewski/Repos/P2B/p2b-template-completo"
+		},
+		"robot.language-server.python": "/Users/Shared/robocorp/ht/b3b3c7c_5a1fac3_9fcd2534/bin/python3.9",
+		"robot.lint.robocop.enabled": true,
+		"robot.completions.keywords.format": "Title Case",
+		"robot.pythonpath": [],
+		"robot.language-server.args": [
+			"-vv",
+			"--log-file=~/robotframework_ls.log"
+		],
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#0F350A",
+			"titleBar.activeBackground": "#154A0E",
+			"titleBar.activeForeground": "#F3FCF2"
+		}
+	}
+}
