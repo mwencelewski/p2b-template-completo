@@ -20,6 +20,7 @@
 			"activityBar.background": "#0F350A",
 			"titleBar.activeBackground": "#154A0E",
 			"titleBar.activeForeground": "#F3FCF2"
-		}
+		},
+		"robocorp.language-server.python": "/Users/Shared/robocorp/ht/b3b3c7c_5a1fac3_9fcd2534/bin/python3.9"
 	}
 }

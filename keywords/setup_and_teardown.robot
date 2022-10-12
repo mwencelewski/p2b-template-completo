@@ -15,5 +15,5 @@ Setup
     END
 
 Finaliza Processo
-    [Documentation]    Fução que é executada no fim do robô
+    [Documentation]    Função que é executada no fim do robô
     Close All Browsers

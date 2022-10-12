@@ -3,8 +3,7 @@
 Library     Collections
 Library     RPA.Browser.Selenium
 #Import de Lib Custom
-Library     MyLibrary
-#Import de Keywords
+Library     ${ROOT}/libraries/MyLibrary.py
 Resource    ${ROOT}/keywords/keywords.robot
 Resource    ${ROOT}/resources/locators.resource
 Resource    ${ROOT}/keywords/setup_and_teardown.robot
