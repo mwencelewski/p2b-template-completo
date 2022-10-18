@@ -1,18 +1,16 @@
 *** Settings ***
 Documentation       Template robot main suite.
 
-Resource            ${ROOT}/resources/main.resource
+Resource            main.resource
 
 Suite Setup         Setup
 Suite Teardown      Finaliza Processo
 
 
 *** Tasks ***
-Login No Site
-    [Documentation]    Realiza Login no Portal
+Minimal task
+    Log    Done.
+    Log to Console    ${TODAY}
 
-    Input Text    ${LOGIN.user}    maria
-    Input Text    ${LOGIN.pwd}    thoushallnotpass
-    Click Button    ${LOGIN.login}
-    Wait Until Page Contains Element    ${FORM.first_name}
-    Screenshot    filename=screenshot01.png
+Login No Site
+    Faz Login no Site

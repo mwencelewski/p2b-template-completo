@@ -4,10 +4,7 @@
 tasks:
   # Task names here are used when executing the bots, so renaming these is recommended.
   Run all tasks:
-    shell: python -m robot --report NONE --outputdir output -V variables/config.py --logtitle "Task log" tasks.robot
-
-  Run Example task:
-    robotTaskName: Example task
+    shell: python -m robot --report NONE --outputdir output --logtitle "Task log" tasks.robot
 
 condaConfigFile: conda.yaml
 
@@ -18,12 +15,13 @@ environmentConfigs:
   - conda.yaml
 
 artifactsDir: output
+
 PATH:
   - .
 PYTHONPATH:
-  - resources
   - keywords
   - libraries
-  - variables
+  - resources
+
 ignoreFiles:
   - .gitignore

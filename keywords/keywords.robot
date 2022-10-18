@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       Template keyword resource.
 
-Resource            ${ROOT}/resources/main.resource
+Resource            main.resource
 
 
 *** Keywords ***
@@ -13,5 +13,12 @@ Open Browser To Website
     [Arguments]    ${URL}
     Open Available Browser    ${URL}
     ${status}    Run Keyword And Return Status    Wait Until Page Contains Element    ${LOGIN.user}
-
     RETURN    ${status}
+
+Faz Login no Site
+    [Documentation]    Realiza Login no Suite
+    Input Text    ${LOGIN.user}    %{USER}
+    Input Text    ${LOGIN.pwd}    %{PWD}
+    Click Button    ${LOGIN.login}
+    Wait Until Page Contains Element    ${FORM.first_name}
+    Screenshot    filename=screenshot01.png
